@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* background — warm off-white canvas */
+  --background-50: 0.992 0.003 95;
+  --background-100: 0.975 0.006 95;
+  --background-200: 0.945 0.008 95;
+  --background-300: 0.905 0.010 95;
+  --background-400: 0.845 0.011 95;
+  --background-500: 0.760 0.012 95;
+  --background-600: 0.660 0.012 95;
+  --background-700: 0.545 0.011 95;
+  --background-800: 0.420 0.010 95;
+  --background-900: 0.300 0.009 95;
+  --background-950: 0.200 0.008 95;
+
+  /* primary — deep navy / midnight blue */
+  --primary-50: 0.965 0.015 262;
+  --primary-100: 0.925 0.030 262;
+  --primary-200: 0.855 0.050 262;
+  --primary-300: 0.745 0.070 262;
+  --primary-400: 0.610 0.090 263;
+  --primary-500: 0.420 0.100 263;
+  --primary-600: 0.350 0.090 263;
+  --primary-700: 0.285 0.078 263;
+  --primary-800: 0.235 0.066 263;
+  --primary-900: 0.185 0.055 263;
+  --primary-950: 0.145 0.045 263;
+
+  /* accent — electric blue / cyan */
+  --accent-50: 0.972 0.020 232;
+  --accent-100: 0.940 0.045 232;
+  --accent-200: 0.892 0.075 230;
+  --accent-300: 0.830 0.105 228;
+  --accent-400: 0.740 0.130 227;
+  --accent-500: 0.640 0.150 233;
+  --accent-600: 0.555 0.150 236;
+  --accent-700: 0.470 0.130 239;
+  --accent-800: 0.390 0.110 241;
+  --accent-900: 0.320 0.090 243;
+  --accent-950: 0.240 0.070 245;
+
+  /* secondary — maroon */
+  --secondary-50: 0.972 0.020 22;
+  --secondary-100: 0.935 0.040 20;
+  --secondary-200: 0.875 0.070 17;
+  --secondary-300: 0.780 0.100 15;
+  --secondary-400: 0.620 0.130 15;
+  --secondary-500: 0.460 0.140 15;
+  --secondary-600: 0.390 0.130 15;
+  --secondary-700: 0.320 0.110 15;
+  --secondary-800: 0.260 0.090 15;
+  --secondary-900: 0.210 0.070 15;
+  --secondary-950: 0.155 0.050 15;
+
+  /* foreground — near-black neutral */
+  --foreground-50: 0.970 0.003 265;
+  --foreground-100: 0.940 0.004 265;
+  --foreground-200: 0.880 0.005 265;
+  --foreground-300: 0.780 0.006 265;
+  --foreground-400: 0.620 0.008 265;
+  --foreground-500: 0.500 0.010 265;
+  --foreground-600: 0.400 0.012 265;
+  --foreground-700: 0.320 0.013 265;
+  --foreground-800: 0.250 0.014 265;
+  --foreground-900: 0.180 0.015 265;
+  --foreground-950: 0.130 0.015 265;
+
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-label: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: oklch(var(--background-50));
+    color: oklch(var(--foreground-950));
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: oklch(var(--accent-500));
+    color: oklch(var(--background-50));
+  }
+
+  :focus-visible {
+    outline: 2px solid oklch(var(--accent-600));
+    outline-offset: 3px;
+  }
+
+  section[id] {
+    scroll-margin-top: 84px;
+  }
+}
+
+@layer components {
+  .jeko-container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .reveal-left {
+    transform: translateX(-34px);
+  }
+
+  .reveal-right {
+    transform: translateX(34px);
+  }
+
+  .reveal-left.is-visible,
+  .reveal-right.is-visible {
+    transform: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes jeko-ticker {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.jeko-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: jeko-ticker 32s linear infinite;
+}
+
+.jeko-ticker:hover .jeko-ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes jeko-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.jeko-float {
+  animation: jeko-float 6s ease-in-out infinite;
+}
+
+@keyframes jeko-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.jeko-rise {
+  animation: jeko-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* hidden honeypot for forms (hard to connect with the field) */
+.jeko-alt-field {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .jeko-ticker-track,
+  .jeko-float,
+  .jeko-rise {
+    animation: none !important;
+  }
+
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* readdy-style-system:colors:start */
+:root {
+  --background-50: 0.963 0.008 225.082;
+  --background-100: 0.928 0.008 225.082;
+  --background-200: 0.873 0.008 225.082;
+  --background-300: 0.793 0.007 225.082;
+  --background-400: 0.683 0.007 225.082;
+  --background-500: 0.553 0.006 225.082;
+  --background-600: 0.423 0.006 225.082;
+  --background-700: 0.313 0.006 225.082;
+  --background-800: 0.223 0.005 225.082;
+  --background-900: 0.143 0.005 225.082;
+  --background-950: 0.073 0.004 225.082;
+  --accent-50: 0.97 0.016 45.687;
+  --accent-100: 0.935 0.035 45.687;
+  --accent-200: 0.875 0.067 45.687;
+  --accent-300: 0.78 0.102 45.687;
+  --accent-400: 0.67 0.149 45.687;
+  --accent-500: 0.699 0.197 45.687;
+  --accent-600: 0.5 0.141 45.687;
+  --accent-700: 0.4 0.113 45.687;
+  --accent-800: 0.31 0.088 45.687;
+  --accent-900: 0.23 0.065 45.687;
+  --accent-950: 0.15 0.042 45.687;
+  --primary-50: 0.97 0.01 254.86;
+  --primary-100: 0.935 0.016 254.86;
+  --primary-200: 0.875 0.027 254.86;
+  --primary-300: 0.78 0.042 254.86;
+  --primary-400: 0.67 0.061 254.86;
+  --primary-500: 0.266 0.08 254.86;
+  --primary-600: 0.5 0.077 254.86;
+  --primary-700: 0.4 0.067 254.86;
+  --primary-800: 0.31 0.056 254.86;
+  --primary-900: 0.23 0.045 254.86;
+  --primary-950: 0.15 0.034 254.86;
+  --secondary-50: 0.97 0.013 242.021;
+  --secondary-100: 0.935 0.021 242.021;
+  --secondary-200: 0.875 0.037 242.021;
+  --secondary-300: 0.78 0.056 242.021;
+  --secondary-400: 0.67 0.082 242.021;
+  --secondary-500: 0.523 0.107 242.021;
+  --secondary-600: 0.5 0.103 242.021;
+  --secondary-700: 0.4 0.09 242.021;
+  --secondary-800: 0.31 0.074 242.021;
+  --secondary-900: 0.23 0.055 242.021;
+  --secondary-950: 0.15 0.036 242.021;
+  --foreground-50: 0.97 0.002 41.6;
+  --foreground-100: 0.93 0.002 41.6;
+  --foreground-200: 0.86 0.003 41.6;
+  --foreground-300: 0.76 0.005 41.6;
+  --foreground-400: 0.65 0.007 41.6;
+  --foreground-500: 0.54 0.009 41.6;
+  --foreground-600: 0.43 0.01 41.6;
+  --foreground-700: 0.34 0.012 41.6;
+  --foreground-800: 0.27 0.013 41.6;
+  --foreground-900: 0.2 0.014 41.6;
+  --foreground-950: 0.235 0.014 41.6;
+}
+
+.dark {
+  --background-50: 0.153 0.027 256.54;
+  --background-100: 0.188 0.018 256.54;
+  --background-200: 0.218 0.017 256.54;
+  --background-300: 0.248 0.016 256.54;
+  --background-400: 0.283 0.015 256.54;
+  --background-500: 0.323 0.014 256.54;
+  --background-600: 0.363 0.013 256.54;
+  --background-700: 0.413 0.012 256.54;
+  --background-800: 0.473 0.011 256.54;
+  --background-900: 0.543 0.009 256.54;
+  --background-950: 0.623 0.008 256.54;
+  --accent-50: 0.18 0.051 45.687;
+  --accent-100: 0.24 0.068 45.687;
+  --accent-200: 0.32 0.09 45.687;
+  --accent-300: 0.42 0.119 45.687;
+  --accent-400: 0.52 0.147 45.687;
+  --accent-500: 0.699 0.197 45.687;
+  --accent-600: 0.64 0.181 45.687;
+  --accent-700: 0.72 0.169 45.687;
+  --accent-800: 0.8 0.123 45.687;
+  --accent-900: 0.88 0.069 45.687;
+  --accent-950: 0.94 0.033 45.687;
+  --primary-50: 0.18 0.027 254.86;
+  --primary-100: 0.24 0.034 254.86;
+  --primary-200: 0.32 0.042 254.86;
+  --primary-300: 0.42 0.053 254.86;
+  --primary-400: 0.52 0.065 254.86;
+  --primary-500: 0.266 0.08 254.86;
+  --primary-600: 0.64 0.077 254.86;
+  --primary-700: 0.72 0.069 254.86;
+  --primary-800: 0.8 0.053 254.86;
+  --primary-900: 0.88 0.035 254.86;
+  --primary-950: 0.94 0.021 254.86;
+  --secondary-50: 0.18 0.037 242.021;
+  --secondary-100: 0.24 0.045 242.021;
+  --secondary-200: 0.32 0.056 242.021;
+  --secondary-300: 0.42 0.071 242.021;
+  --secondary-400: 0.52 0.088 242.021;
+  --secondary-500: 0.523 0.107 242.021;
+  --secondary-600: 0.64 0.103 242.021;
+  --secondary-700: 0.72 0.092 242.021;
+  --secondary-800: 0.8 0.071 242.021;
+  --secondary-900: 0.88 0.047 242.021;
+  --secondary-950: 0.94 0.028 242.021;
+  --foreground-50: 0.18 0.002 78.298;
+  --foreground-100: 0.26 0.002 78.298;
+  --foreground-200: 0.36 0.002 78.298;
+  --foreground-300: 0.48 0.002 78.298;
+  --foreground-400: 0.59 0.002 78.298;
+  --foreground-500: 0.68 0.003 78.298;
+  --foreground-600: 0.76 0.003 78.298;
+  --foreground-700: 0.83 0.004 78.298;
+  --foreground-800: 0.89 0.004 78.298;
+  --foreground-900: 0.94 0.004 78.298;
+  --foreground-950: 0.95 0.005 78.298;
+}
+
+html,
+body {
+  background: oklch(var(--background-50));
+  color: oklch(var(--foreground-950));
+}
+/* readdy-style-system:colors:end */
