@@ -1,9 +1,11 @@
+import logo from "@/assets/LOGO JEKO.png";
+
 export const brand = {
   name: "JEKO",
   fullName: "Kelab Jasmani dan Kokurikulum",
   institution: "IPG Kampus Kota Bharu",
   statement: "SPORTS • LEADERSHIP • TEAMWORK • EXCELLENCE",
-  logo: "https://public.readdy.ai/ai/img_res/36e8eb83-08ca-419c-a55c-d16ed99328dc.png",
+  logo,
   tagline: "Where movement becomes leadership.",
 };
 
