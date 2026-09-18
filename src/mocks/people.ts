@@ -117,17 +117,17 @@ export const advisors = [
 export const organizationChart = {
   chairperson: {
     id: "org-chair",
-    name: "Wrex",
+    name: "Wrex Anlywaldon",
     role: "Chairperson",
     image:
       "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20confident%20young%20Malaysian%20male%20student%20leader%20in%20a%20navy%20sports%20blazer%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20professional%20leadership%20headshot%2C%20composed%20expression%2C%20sharp%20detail%2C%20premium%20sports%20organization%20photography&width=800&height=1000&seq=jeko-port-12&orientation=portrait",
   },
   viceChairperson: {
     id: "org-vice",
-    name: "Ella",
+    name: "Nur Syaillahi",
     role: "Vice-Chairperson",
     image:
-      "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20poised%20young%20Malaysian%20woman%20student%20leader%20wearing%20a%20sporty%20hijab%20and%20navy%20outfit%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20leadership%20headshot%2C%20confident%20friendly%20expression%2C%20sharp%20detail%2C%20premium%20photography&width=800&height=1000&seq=jeko-port-13&orientation=portrait",
+      "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20poised%20young%20Malaysian%20woman%20student%20leader%20wearing%20a%20sporty%20hijab%20and%20navy%20outfit%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20leadership%20headshot%2C%20confident%20friendly%20expression%2C%20sharp%2  detail%2C%20premium%20photography&width=800&height=1000&seq=jeko-port-13&orientation=portrait",
   },
   administration: [
     {
@@ -139,7 +139,7 @@ export const organizationChart = {
     },
     {
       id: "org-vsec",
-      name: "Farahiya",
+      name: "Nurul Farahiya",
       role: "Vice-Secretary",
       image:
         "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20warm%20young%20Malaysian%20woman%20with%20a%20hijab%20in%20navy%20attire%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20team%20headshot%2C%20bright%20smile%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-15&orientation=portrait",
@@ -172,7 +172,7 @@ export const organizationChart = {
         },
         {
           id: "org-multi-2",
-          name: "Alya",
+          name: "Nur Syafiyah Alya",
           image:
             "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20bright%20young%20Malaysian%20woman%20student%20with%20a%20hijab%20in%20navy%20attire%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20committee%20headshot%2C%20cheerful%20expression%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-03&orientation=portrait",
         },
@@ -190,7 +190,7 @@ export const organizationChart = {
         },
         {
           id: "org-activities-2",
-          name: "Aliff",
+          name: "Wan Aliff",
           image:
             "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20relaxed%20young%20Malaysian%20man%20student%20with%20glasses%20in%20a%20navy%20shirt%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20committee%20headshot%2C%20friendly%20expression%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-05&orientation=portrait",
         },
@@ -208,7 +208,7 @@ export const organizationChart = {
         },
         {
           id: "org-logistics-2",
-          name: "Rayyan",
+          name: "Syazany Rayyan",
           image:
             "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20young%20Malaysian%20man%20student%20with%20short%20hair%20in%20navy%20attire%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20committee%20headshot%2C%20calm%20expression%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-07&orientation=portrait",
         },
@@ -220,13 +220,13 @@ export const organizationChart = {
       members: [
         {
           id: "org-welfare-1",
-          name: "Trisya",
+          name: "Nur Alieya Trisya",
           image:
             "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20caring%20young%20Malaysian%20woman%20student%20in%20a%20navy%20blouse%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20professional%20committee%20headshot%2C%20warm%20smile%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-08&orientation=portrait",
         },
         {
           id: "org-welfare-2",
-          name: "Ainsyu",
+          name: "ainsyu",
           image:
             "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20gentle%20young%20Malaysian%20woman%20student%20with%20a%20hijab%20in%20navy%20attire%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20committee%20headshot%2C%20kind%20expression%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-09&orientation=portrait",
         },
@@ -238,7 +238,7 @@ export const organizationChart = {
       members: [
         {
           id: "org-special-1",
-          name: "Akif",
+          name: "Muhammad Akif",
           image:
             "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20sharp%20young%20Malaysian%20man%20student%20in%20a%20navy%20shirt%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20professional%20committee%20headshot%2C%20focused%20expression%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-10&orientation=portrait",
         },
@@ -262,7 +262,7 @@ export const organizationChart = {
         },
         {
           id: "org-discipline-2",
-          name: "Mia",
+          name: "Damia Irdina Putri",
           image:
             "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20an%20assured%20young%20Malaysian%20woman%20student%20in%20navy%20attire%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20committee%20headshot%2C%20calm%20confident%20look%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-13&orientation=portrait",
         },
