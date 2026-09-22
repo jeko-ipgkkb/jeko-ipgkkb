@@ -4,7 +4,7 @@
 export const advisors = [
   {
     id: "adv-01",
-    name: "Dr. Nurul Aisyah binti Rahman",
+    name: "Hashim bin Ismail",
     role: "Head of Sports Science Department",
     description:
       "Leads the academic direction of sports science and mentors JEKO's research-driven programmes.",
@@ -14,7 +14,7 @@ export const advisors = [
   },
   {
     id: "adv-02",
-    name: "Prof. Madya Dr. Ahmad Fauzi bin Ismail",
+    name: "Dr. Mohamad Fadil bin Ibrahim",
     role: "Senior Faculty Advisor",
     description:
       "The long-standing guardian of JEKO, guiding leadership transitions and club governance.",
@@ -24,7 +24,7 @@ export const advisors = [
   },
   {
     id: "adv-03",
-    name: "Dr. Siti Khadijah binti Hassan",
+    name: "Dr. Che Kamarudin bin Che Mat",
     role: "Physical Education Coordinator",
     description:
       "Shapes the pedagogy of physical education and aligns it with national curriculum standards.",
@@ -34,7 +34,7 @@ export const advisors = [
   },
   {
     id: "adv-04",
-    name: "Mr. Mohd Hafiz bin Abdullah",
+    name: "Zulkifli bin Yusoff",
     role: "Sports Development Officer",
     description:
       "Coordinates athlete development pathways and inter-campus sports competitions.",
@@ -44,7 +44,7 @@ export const advisors = [
   },
   {
     id: "adv-05",
-    name: "Dr. Rosnah binti Yaakob",
+    name: "Abdul Fatah bin Shaari",
     role: "Co-curricular Advisor",
     description:
       "Oversees co-curricular frameworks and ensures every member develops beyond the field.",
@@ -54,7 +54,7 @@ export const advisors = [
   },
   {
     id: "adv-06",
-    name: "Mr. Wan Azlan bin Wan Daud",
+    name: "Mohd Syazwan bin Che Hashim",
     role: "Athletics Advisor",
     description:
       "Trains and prepares JEKO athletes for track and field events at state and national level.",
@@ -64,7 +64,7 @@ export const advisors = [
   },
   {
     id: "adv-07",
-    name: "Dr. Zainab binti Omar",
+    name: "Masywawi bin Mohd Nor",
     role: "Student Welfare Advisor",
     description:
       "Champions member wellbeing, safety and a supportive club culture for all.",
@@ -74,7 +74,7 @@ export const advisors = [
   },
   {
     id: "adv-08",
-    name: "Mr. Khairul Anuar bin Zulkifli",
+    name: "Nor Asyikin binti Ibrahim",
     role: "Facilities & Safety Advisor",
     description:
       "Manages sports facilities, equipment and risk management for every activity.",
@@ -84,7 +84,7 @@ export const advisors = [
   },
   {
     id: "adv-09",
-    name: "Dr. Faridah binti Salleh",
+    name: "Nurziana binti Che Hashim",
     role: "Health & Wellness Advisor",
     description:
       "Integrates health, nutrition and wellness education into JEKO's programme design.",
@@ -94,7 +94,7 @@ export const advisors = [
   },
   {
     id: "adv-10",
-    name: "Mrs. Noorhayati binti Mokhtar",
+    name: "Wan Zamri bin Che Mamat",
     role: "Events Coordinator Advisor",
     description:
       "Guides the planning and delivery of JEKO tournaments, carnivals and ceremonies.",
@@ -104,13 +104,37 @@ export const advisors = [
   },
   {
     id: "adv-11",
-    name: "Mr. Shamsul Bahri bin Rahim",
+    name: "Norlelawati binti Ramli",
     role: "Community Engagement Advisor",
     description:
       "Connects JEKO to schools and communities through sports outreach and service.",
     featured: false,
     image:
       "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20confident%20young%20Malaysian%20man%20with%20a%20short%20beard%20in%20a%20navy%20blazer%20on%20a%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20professional%20academic%20headshot%2C%20warm%20assured%20expression%2C%20sharp%20detail%2C%20premium%20institutional%20photography&width=800&height=1000&seq=jeko-port-11&orientation=portrait",
+  },
+    {
+    id: "adv-12",
+    name: "Abdul Rahaman bin Mohamed",
+    role: "Faculty Advisor",
+    description: "Supports JEKO activities and student development through sports and co-curricular programmes.",
+    featured: false,
+    image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20professional%20young%20Malaysian%20male%20lecturer",
+  },
+  {
+    id: "adv-13",
+    name: "Nik Md Dazpi bin Mustafa",
+    role: "Faculty Advisor",
+    description: "Supports student development and co-curricular activities through sports and leadership.",
+    featured: false,
+    image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20professional%20young%20Malaysian%20male%20lecturer",
+  },
+  {
+    id: "adv-14",
+    name: "Azidi bin Ismail",
+    role: "Faculty Advisor",
+    description: "Supports JEKO programmes, sports activities and student leadership development.",
+    featured: false,
+    image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20professional%20young%20Malaysian%20male%20lecturer",
   },
 ];
 
@@ -272,12 +296,12 @@ export const organizationChart = {
 };
 
 export const members = [
-  { id: "m-01", no: "01", name: "Aiman Hakimi", category: "Athletics", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20confident%20young%20Malaysian%20male%20student%20athlete%20in%20a%20navy%20sports%20jersey%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20natural%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-01&orientation=portrait" },
-  { id: "m-02", no: "02", name: "Nur Balqis", category: "Netball", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20focused%20young%20Malaysian%20woman%20student%20athlete%20with%20a%20hijab%20in%20a%20navy%20sports%20jersey%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20team%20roster%20headshot%2C%20calm%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-02&orientation=portrait" },
-  { id: "m-03", no: "03", name: "Danial Rizqi", category: "Football", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20cheerful%20young%20Malaysian%20man%20student%20athlete%20in%20a%20navy%20polo%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20friendly%20smile%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-03&orientation=portrait" },
-  { id: "m-04", no: "04", name: "Siti Aminah", category: "Volleyball", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20determined%20young%20Malaysian%20woman%20student%20athlete%20in%20a%20navy%20jersey%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20team%20roster%20headshot%2C%20confident%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-04&orientation=portrait" },
-  { id: "m-05", no: "05", name: "Haziq Rahman", category: "Athletics", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20an%20energetic%20young%20Malaysian%20man%20student%20athlete%20with%20a%20short%20beard%20in%20navy%20sportswear%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-05&orientation=portrait" },
-  { id: "m-06", no: "06", name: "Nadia Izzati", category: "Badminton", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20lively%20young%20Malaysian%20woman%20student%20athlete%20with%20a%20hijab%20in%20navy%20sports%20attire%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20team%20roster%20headshot%2C%20bright%20smile%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-06&orientation=portrait" },
+  { id: "m-01", no: "01", name: "Aidil Shahiran", category: "Hockey", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20confident%20young%20Malaysian%20male%20student%20athlete%20in%20a%20navy%20sports%20jersey%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20natural%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-01&orientation=portrait" },
+  { id: "m-02", no: "02", name: "Muhammad Danial ", category: "Voleyball", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20focused%20young%20Malaysian%20woman%20student%20athlete%20with%20a%20hijab%20in%20a%20navy%20sports%20jersey%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20team%20roster%20headshot%2C%20calm%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-02&orientation=portrait" },
+  { id: "m-03", no: "03", name: "Alif Aiman", category: "Takraw", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20cheerful%20young%20Malaysian%20man%20student%20athlete%20in%20a%20navy%20polo%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20friendly%20smile%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-03&orientation=portrait" },
+  { id: "m-04", no: "04", name: "Aqif Nizhar", category: "Softball", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20determined%20young%20Malaysian%20woman%20student%20athlete%20in%20a%20navy%20jersey%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20team%20roster%20headshot%2C%20confident%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-04&orientation=portrait" },
+  { id: "m-05", no: "05", name: "Muhammad Dani", category: "Athletics", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20an%20energetic%20young%20Malaysian%20man%20student%20athlete%20with%20a%20short%20beard%20in%20navy%20sportswear%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-05&orientation=portrait" },
+  { id: "m-06", no: "06", name: "Azim Faris", category: "Badminton", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20lively%20young%20Malaysian%20woman%20student%20athlete%20with%20a%20hijab%20in%20navy%20sports%20attire%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20team%20roster%20headshot%2C%20bright%20smile%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-06&orientation=portrait" },
   { id: "m-07", no: "07", name: "Firdaus Amin", category: "Football", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20focused%20young%20Malaysian%20man%20student%20athlete%20in%20a%20navy%20jersey%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20serious%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-07&orientation=portrait" },
   { id: "m-08", no: "08", name: "Amirah Solehah", category: "Netball", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20a%20warm%20young%20Malaysian%20woman%20student%20athlete%20in%20a%20navy%20polo%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20studio%20lighting%2C%20team%20roster%20headshot%2C%20gentle%20smile%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-08&orientation=portrait" },
   { id: "m-09", no: "09", name: "Zulhilmi", category: "Sepak Takraw", image: "https://readdy.ai/api/search-image?query=Editorial%20studio%20portrait%20of%20an%20agile%20young%20Malaysian%20man%20student%20athlete%20in%20navy%20sportswear%2C%20warm%20off-white%20seamless%20backdrop%2C%20soft%20directional%20light%2C%20team%20roster%20headshot%2C%20alert%20expression%2C%20sharp%20detail%2C%20premium%20sports%20photography&width=800&height=1000&seq=jeko-port-09&orientation=portrait" },
